@@ -1,0 +1,39 @@
+<div class="member-profile" *ngFor="let member of members">
+    <div class="member-image">
+        <img [src]="member.imageUrl">
+    </div>
+    <div class="member-details">
+        <div class="member-details-row">
+            <div class="details">
+                Name
+            </div>
+            <div class="member-info">
+                : {{member.name}}
+            </div>
+        </div>
+        <div class="member-details-row">
+            <div class="details">
+                Date of Birth
+            </div>
+            <div class="member-info">
+                : {{member.dateOfBirth | date}}
+            </div>
+        </div>
+        <div class="member-details-row">
+            <div class="details">
+                Email Address
+            </div>
+            <div class="member-info">
+                : {{member.email}}
+            </div>
+        </div>
+        <div class="member-details-row">
+            <div class="details">
+                Phone Number
+            </div>
+            <div class="member-info">
+                : {{member.phoneNumber}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+    <div id="create-member-form">
+        <h3>Create Member</h3>
+        <div class="row">
+            <input type="text" autofocus ngModel="member.name" placeholder="Full Name">
+        </div>
+        <div class="row">
+            <input type="text" ngModel="member.email" placeholder="Email Address">
+        </div>
+        <div class="row">
+            <input type="text" ngModel="member.phoneNumber" placeholder="Phone Number">
+        </div>
+        <div class="row">
+            <input type="text" ngModel="member.email" placeholder="Email Address">
+        </div>
+        <div class="row">
+            <button (keyup)="addMember()">Add</button>
+        </div>
+    </div>
+</div>
+
+{{member | json}}
