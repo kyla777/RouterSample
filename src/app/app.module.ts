@@ -1,28 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // Import RouterModule and Routes
-import { RouterModule, Routes } from '@angular/router';
+// import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListMembersComponent } from './list-members/list-members.component';
 import { CreateMemberComponent } from './create-member/create-member.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
+import { MemberDetailsComponent } from './member-details/member-details.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 // Create an array of routes
-const appRoutes: Routes = [
-  { path: "list", component: ListMembersComponent },
-  { path: "create", component: CreateMemberComponent },
-  { path: "", redirectTo: "list", pathMatch: "full"},
-  { path: "**", component: PageNotFoundComponent }
-]
+// const appRoutes: Routes = [
+//   { path: "list", component: ListMembersComponent },
+//   { path: "create", component: CreateMemberComponent },
+//   { path: "", redirectTo: "list", pathMatch: "full"},
+//   { path: "**", component: PageNotFoundComponent }
+// ]
 
 @NgModule({
   declarations: [
     AppComponent,
     ListMembersComponent,
     CreateMemberComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HomeComponent,
+    MemberDetailsComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +42,7 @@ const appRoutes: Routes = [
 
     // forRoot creates a module that contains all the directives, 
     // the given routes, and the router service itself.
-    RouterModule.forRoot(appRoutes)
+    // RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

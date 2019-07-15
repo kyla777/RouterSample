@@ -1,0 +1,44 @@
+.member-profile {
+  padding: 3%;
+  width: 94%;
+  height: auto;
+  display: flex;
+}
+
+.member-image {
+  height: 100%;
+  width: 23%;
+  margin-left: 2%;
+  float: left;
+}
+
+.member-image>img {
+  width: 100%;
+}
+
+.member-details {
+  height: 100%;
+  width: 73%;
+  margin-left: 2%;
+  float: right;
+}
+
+.member-details-row {
+  display: inline-flex;
+  padding: 3px;
+  width: 100%;
+}
+
+.details {
+  width: 25%;
+}
+
+.member-info {
+  width: 75%;
+}
+
+#no-member {
+  margin-top: 4%;
+  font-size: 20px;
+  text-align: center;
+}

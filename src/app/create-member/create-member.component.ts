@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { Member } from '../models/member.model';
+import { IMember } from '../models/member.model';
 
 @Component({
   selector: 'app-create-member',
@@ -19,7 +19,7 @@ export class CreateMemberComponent {
   dateOfBirth: Date;
   imageUrl: string = null;
   
-  member: Member = {
+  member: IMember = {
     id: this.id,
     name: this.name,
     email: this.email,
