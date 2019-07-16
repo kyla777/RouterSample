@@ -14,7 +14,7 @@ export class MemberDetailsComponent implements OnInit {
 
   member: IMember;
   ngOnInit() {
-    //this.member = MEMBERS.find
+    // Get parameter id
     this.route.paramMap.subscribe(params => {
       console.log(params.get('id'));
       this.member = MEMBERS.find(member => member.id == Number(params.get('id')));

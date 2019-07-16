@@ -1,3 +1,0 @@
-1. Create an angular project 'ng new [project name]'
-2. Would you like to add Angular routing? (y/N) y
-3. Choose CSS

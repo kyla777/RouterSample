@@ -102,5 +102,23 @@ export const MEMBERS: IMember[] = [
     phoneNumber: "09123456799",
     isActive: true,
     imageUrl: "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F236x%2F14%2F3c%2F88%2F143c8842070839dc2fe40cc9f9c48ec3--shiba-inu-sticker.jpg&f=1"
+  },
+  {
+    id: 12,
+    name: "Kyla",
+    dateOfBirth: new Date("1/11/1997"),
+    email: "kyla@sample.pagong",
+    phoneNumber: "09123456781",
+    isActive: true,
+    imageUrl: "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fclipartmag.com%2Fimages%2Fdrawings-of-dog-7.jpg&f=1"
+  },
+  {
+    id: 13,
+    name: "Khen",
+    dateOfBirth: new Date("1/12/1997"),
+    email: "khen@sample.pagong",
+    phoneNumber: "09123456782",
+    isActive: true,
+    imageUrl: "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F236x%2F14%2F3c%2F88%2F143c8842070839dc2fe40cc9f9c48ec3--shiba-inu-sticker.jpg&f=1"
   }
 ];
