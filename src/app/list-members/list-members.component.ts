@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IMember } from '../models/member.model';
 import { MEMBERS } from '../mock-members';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-members',
@@ -9,12 +10,15 @@ import { MEMBERS } from '../mock-members';
 })
 export class ListMembersComponent {
 
-  constructor() { }
-
+  constructor(private router: Router) { }
 
   members: IMember[] = MEMBERS;
 
-  // addMember(member: IMember) {
-  //   this.members.unshift(member);
-  // }
+  // click event
+  // navigate(['1','2'])
+  // new url = localhost:4200/1/2
+  goToMemberDetails(member: IMember) {
+    this.router.navigate(["list", member.id])
+  }
+  
 }

@@ -5,6 +5,7 @@
     display: inline-table;
     border: 1px solid #000000;
     align-content: center;
+    cursor: pointer;
 }
 
 .member-image {
